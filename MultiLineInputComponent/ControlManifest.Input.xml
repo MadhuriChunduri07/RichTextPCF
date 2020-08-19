@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="TestNamespace" constructor="MultiLineInputComponent" version="1.0.1" display-name-key="MultiLineInputComponent" description-key="MultiLineInputComponent description" control-type="standard">
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <property name="fieldControl" display-name-key="PropertyMultilineField_Display_Key" description-key="PropertyMultilineField_Desc_Key" of-type="Multiple" usage="bound" required="true" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="../node_modules/react-quill/dist/quill.snow.css" order="1"/>
+      <css path="css/MultiLineInputComponent.css" order="1" />
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      
+      <resx path="strings/MultiLineInputComponent.1033.resx" version="1.0.0" />
+      -->
+    </resources>
+  </control>
+</manifest>
